@@ -32,11 +32,11 @@ func main() {
 
 	if GRPC_PORT == "" {
 		log.Printf("error of load env file, server work on default 50051 port")
-		GRPC_PORT = "50051" // значение по умолчанию если что
+		GRPC_PORT = "50051"
 	}
 	if HTTP_PORT == "" {
 		log.Printf("error of load env file, HTTP server work on default 8080 port")
-		HTTP_PORT = "8080" // значение по умолчанию для HTTP
+		HTTP_PORT = "8080"
 	}
 
 	// Создаем gRPC-сервер и подключаем к нему интерсептор
